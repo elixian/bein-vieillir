@@ -8,6 +8,4 @@ import HeaderNav from '@/components/HeaderNav.vue'
   <RouterView />
 </template>
 
-<style scoped>
-
-</style>
+ 
