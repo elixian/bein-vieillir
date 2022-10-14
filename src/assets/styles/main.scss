@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+    @import 'fonts';
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    :root{
+        --color-green: 82 174 50;
+        --color-grey-2: 102 102 102;
+        --color-beige: 246 246 238;
+        --color-purple: 45 47 127;
+    }
+
+    h1{
+        font-size: 2.875rem;
+        font-weight: 700;
+        line-height: 3.375rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+        
+    }
+
+    h4{
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1.25rem;
+    }
+}
+
+
+
