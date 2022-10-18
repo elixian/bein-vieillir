@@ -34,5 +34,18 @@
             "title": "Alimentation plaisir",
             "content": "Il n’y a pas d’âge pour faire du sport ! Voilà quelques gestes quotidiens accessibles à tous pour rester en actif sans difficultés."
         }
+    ],
+    "memory": [
+        {
+            "url": "memory.png",
+            "title": "Mémoire active",
+            "content": "Il n’y a pas d’âge pour faire du sport ! Voilà quelques gestes quotidiens accessibles à tous pour rester en actif sans difficultés."
+        },
+        {
+            "url": "memory-2.png",
+            "title": "Tchat sur la mémoire",
+            "content": "Il n’y a pas d’âge pour faire du sport ! Voilà quelques gestes quotidiens accessibles à tous pour rester en actif sans difficultés."
+        }
+        
     ]
 }
