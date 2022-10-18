@@ -5,17 +5,30 @@ import CardShadow from "@/components/CardShadow.vue";
 </script>
 
 <template>
-  <main>
-    <section class="pt-[104px]">
+
       <article
-        class="grid grid-cols-12 gap-5 h-[620px] bg-bv-beige pr-44 pl-44 pt-16"
+        class="relative grid grid-cols-12 gap-28 h-[620px] bg-bv-beige pr-44 pl-44  items-center"
       >
-        <div class="col-span-6">
-          <h1>J'avance en âge <span class="text-bv-green">en santé</span></h1>
-          <p class="text-bv-purple">
-            Obtenez via des conseils, des témoignages et des avis d’experts,
+        <div class="2xl:col-span-7 col-span-5">
+          <h1 class="text-bv-purple">Bien vieillir <span class="text-bv-green">en toute sérénité </span></h1>
+          <p class="text-bv-purple pt-4 max-w-fit">
+            Obtenez via des conseils, des témoignages  et des avis d’experts,
             toutes les clés pour avancer en âge sereinement.
           </p>
+        </div>
+        <div class="2xl:col-span-5  col-span-7 flex justify-between">
+          <div class="relative">
+            <img class="h-72" src="@images/couple.png" alt="">
+            <img class="absolute -bottom-4 " src="@images/arrow-twist.svg" alt="">
+            <img class="absolute bottom-24 -right-24" src="@images/bulle-dialog.svg" alt="">
+            <img class="absolute top-2 -right-20" src="@images/ampoule.png" alt="">
+          </div>
+            
+        </div>
+        <div class="absolute flex justify-evenly  items-center gap-8 bottom-0 right-1/2 translate-y-1/2 translate-x-1/2 h-36 w-2/3 pr-9 pl-9 bg-white shadow-lg rounded-lg">
+            <img src="@images/Group-186.png" alt="">
+            <p class="font-bold">Vous voulez faire le plein d'idées et de conseils pour rester en forme ?</p>
+            <button class=" bg-bv-purple leading-3 p-4 pr-8 pl-8 h-12 rounded-lg text-white">Je découvre les activités</button>
         </div>
       </article>
       <!--      A NE PAS LOUPER             -->
@@ -109,8 +122,7 @@ import CardShadow from "@/components/CardShadow.vue";
        
          </div>
       </article>
-    </section>
-  </main>
+
   <div class="flex justify-center items-center gap-10 pt-32">
     <p>Proposé par:</p>
     <img src="@images/canv-logo.png" alt="Assurance retraite logo">

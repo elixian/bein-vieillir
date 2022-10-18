@@ -7,7 +7,8 @@
 
       <ul class="main-nav flex flex-grow justify-evenly gap-5 ">
         <li v-for=" name, i in dataMenu" :key="i" @click="subMenu = i===1 &&!subMenu"  class="hover:text-bv-green transition-colors duration-300 ">
-          {{name.label}}
+          <router-link to="/" v-if="i===0">{{name.label}}</router-link>
+          <span v-else> {{name.label}}</span>
           <span v-if="name.img"><img src="@/assets/images/icones/triangle.svg" alt="" /></span>
         </li>
 
@@ -25,7 +26,7 @@
       <!-- *******  MEGA MENU  ******* -->
     <div
       class="sub-menu absolute flex top-[104px] left-0 h-[340px] w-full shadow-lg z-10 bg-white"
-      v-if="subMenu"
+      v-if="subMenu" @mouseleave.prevent="subMenu=0"
     >
       <div class="know-more pl-44 pt-8 pr-16 bg-slate-100 h-full w-1/3">
         <h2 class="text-bv-green">Ma tête</h2>
@@ -34,11 +35,10 @@
           Une bonne estime de soi nous aide à reconnaitre nos besoins et à les
           exprimer, elle nous donne le pouvoir de dire non.
         </p>
-        <a href="#" class="flex gap-2 items-center justify-end mt-16"
-          >En savoir plus
-          <span
+        <router-link class="flex gap-2 items-center justify-end mt-16" to="/matete">En savoir plus<span
             ><img src="@/assets/images/icones/chevron-right.svg" alt="" /></span
-        ></a>
+        ></router-link>
+     
       </div>
       <div class="sub-menu_link flex gap-16 pl-8 pt-8 ">
           <nav>
@@ -94,7 +94,7 @@ import { ref} from "vue"
 let subMenu = ref(0);
 
 let dataMenu = ref([
-  {label:'Actualité', img:0},
+  {label:'Actualité', img:0, url:'/'},
   {label:'Ma tête', img:1},
   {label:'Mon corps', img:1},
   {label:'Mon logement', img:1},

@@ -1,0 +1,38 @@
+{
+    "stress": [
+        {
+            "url": "stress-1.png",
+            "title": "Continuer à apprendre",
+            "content": "Il n’y a pas d’âge pour faire du sport ! Voilà quelques gestes quotidiens accessibles à tous pour rester en actif sans difficultés."
+        },
+        {
+            "url": "stress-2.png",
+            "title": "Stress et émotions",
+            "content": "Il n’y a pas d’âge pour faire du sport ! Voilà quelques gestes quotidiens accessibles à tous pour rester en actif sans difficultés."
+        }
+    ],
+    "psychologie": [
+        {
+            "url": "psy-1.png",
+            "title": "Penser à soi",
+            "content": "Il n’y a pas d’âge pour faire du sport ! Voilà quelques gestes quotidiens accessibles à tous pour rester en actif sans difficultés."
+        },
+        {
+            "url": "psy-2.png",
+            "title": "Amour et affection",
+            "content": "Il n’y a pas d’âge pour faire du sport ! Voilà quelques gestes quotidiens accessibles à tous pour rester en actif sans difficultés."
+        }
+        ,
+        {
+            "url": "psy-3.png",
+            "title": "Entourage et bien-être",
+            "content": "Il n’y a pas d’âge pour faire du sport ! Voilà quelques gestes quotidiens accessibles à tous pour rester en actif sans difficultés."
+        }
+        ,
+        {
+            "url": "psy-4.png",
+            "title": "Alimentation plaisir",
+            "content": "Il n’y a pas d’âge pour faire du sport ! Voilà quelques gestes quotidiens accessibles à tous pour rester en actif sans difficultés."
+        }
+    ]
+}
