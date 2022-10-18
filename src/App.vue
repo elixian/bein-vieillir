@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import HeaderNav from "@/components/HeaderNav.vue";
 import Footer from "./components/Footer.vue";
+import Propulsed from "./components/Propulsed.vue";
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import Footer from "./components/Footer.vue";
       <RouterView />
     </section>
   </main>
+  <Propulsed/>
   <Footer />
 </template>

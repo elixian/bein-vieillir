@@ -4,9 +4,9 @@
             <img class=" w-[255px] h-full" :src="`../src/assets/images/myhead/${url}`" alt="">
         </div>
        
-        <div class="p-5 flex flex-col  bg-white">
-            <h4>{{title}}</h4>
-            <p>{{content}}</p>
+        <div class="p-5 flex flex-col gap-5 bg-white">
+            <h3>{{title}}</h3>
+            <p class="text-bv-grey-2 ">{{content}}</p>
         </div>
     </div>
 </template>
@@ -26,7 +26,7 @@ img{
 .longcard:hover img{
 
     
-    transform:scale(1.1);
+    transform:scale(1.08);
    
 }
 </style>

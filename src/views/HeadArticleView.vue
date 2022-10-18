@@ -1,8 +1,9 @@
 <script setup>
 import LongCard from "@/components/ui/LongCard.vue";
+import CardShadow from "@/components/CardShadow.vue"
 import myhead_data from "../data/myhead.json";
 
-const { stress,psychologie } = myhead_data;
+const { stress,psychologie, memory } = myhead_data;
 console.log("🚀 ~ file: HeadArticleView.vue ~ line 6 ~ stress", psychologie);
 </script>
 
@@ -43,14 +44,20 @@ console.log("🚀 ~ file: HeadArticleView.vue ~ line 6 ~ stress", psychologie);
         :title="s.title"
         :content="s.content"
       />
-      <div class="flex rounded-lg shadow-lg h-52 bg-blue-200 overflow-hidden cursor-pointer">
+
+      <!-- Colored card -->
+      <div class="flex rounded-lg shadow-lg h-52 bg-blue-200 p-8 overflow-hidden cursor-pointer">
         <div class="flex-shrink-0">
           <img class="h-full" src="@images/computer.svg" alt="" />
         </div>
 
-        <div class="p-5 flex flex-col">
-          <h4>{{ title }}</h4>
-          <p>{{ content }}</p>
+        <div class="pl-5 flex gap-4 flex-col">
+            <div class="flex w-fit p-2  pl-3 pr-3 bg-blue-600 rounded-[40px] text-white ">
+              Quizz
+            </div>
+          <h3>Testez vos conaissances en matière de psychologie</h3>
+          <div class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max"><img class="w-[13px] -rotate-90" src="@/assets/images/icones/triangle.svg" alt=""> Relever le défi</div>
+
         </div>
       </div>
 
@@ -64,6 +71,77 @@ console.log("🚀 ~ file: HeadArticleView.vue ~ line 6 ~ stress", psychologie);
         :title="psy.title"
         :content="psy.content"
       />
+
+       <!-- Colored card -->
+       <div class="flex rounded-lg shadow-lg h-52 bg-blue-200 p-8 overflow-hidden cursor-pointer">
+        <div class="flex-shrink-0">
+          <img class="h-full" src="@images/computer.svg" alt="" />
+        </div>
+
+        <div class="pl-5 flex gap-4 flex-col">
+            <div class="flex w-fit p-2  pl-3 pr-3 bg-blue-600 rounded-[40px] text-white ">
+              Quizz
+            </div>
+          <h3>Testez vos conaissances en matière de psychologie</h3>
+          <div class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max"><img class="w-[13px] -rotate-90" src="@/assets/images/icones/triangle.svg" alt=""> Relever le défi</div>
+
+        </div>
+      </div>
+
+      <h2 class="mb-5 mt-12">Mémoire</h2>
+      <LongCard
+        v-for="(mem, id) in memory"
+        :key="id"
+        class="mb-5"
+        :url="mem.url"
+        :title="mem.title"
+        :content="mem.content"
+      />
     </div>
+  </article>
+  <article class="grid grid-cols-12 gap-5 pr-44 pl-44 pt-24">
+        <h2 class="col-span-full">Les dernières actualités sur le sujet</h2>
+     
+            <CardShadow class="col-span-3">
+                <template v-slot:image>
+                    <img class="rounded-t-md w-full" src="@/assets/images/myhead/actu-1.png" alt="">
+                </template>
+                
+                  <template v-slot:badge>Témoignage</template>
+                  <template v-slot:title
+                    >Être bien accompagné à ma sortie d'hospitalisation</template
+                  >
+            </CardShadow>
+            <CardShadow  class="col-span-3">
+                <template v-slot:image>
+                    <img class="rounded-t-md w-full" src="@/assets/images/myhead/actu-2.png" alt="">
+                </template>
+                
+                  <template v-slot:badge>Témoignage</template>
+                  <template v-slot:title
+                    >Être bien accompagné à ma sortie d'hospitalisation</template
+                  >
+            </CardShadow>
+            <CardShadow  class="col-span-3">
+                <template v-slot:image>
+                    <img class="rounded-t-md w-full" src="@/assets/images/myhead/actu-3.png" alt="">
+                </template>
+                
+                  <template v-slot:badge>Témoignage</template>
+                  <template v-slot:title
+                    >Être bien accompagné à ma sortie d'hospitalisation</template
+                  >
+            </CardShadow>
+            <CardShadow class="col-span-3">
+                <template v-slot:image>
+                    <img class="rounded-t-md w-full" src="@/assets/images/myhead/actu-4.png" alt="">
+                </template>
+                
+                  <template v-slot:badge>Témoignage</template>
+                  <template v-slot:title
+                    >Être bien accompagné à ma sortie d'hospitalisation</template
+                  >
+            </CardShadow>
+        
   </article>
 </template>

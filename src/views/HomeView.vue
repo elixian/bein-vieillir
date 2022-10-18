@@ -70,8 +70,10 @@ import CardShadow from "@/components/CardShadow.vue";
             
           </div>
           <div class="col-span-4">
-            <img class="rounded-t-md w-full" src="@/assets/images/woman-horses.png" alt="">
-            <CardShadow class="mt-3">
+            <CardShadow >
+              <template v-slot:image>
+                <img class="rounded-t-md w-full" src="@/assets/images/woman-horses.png" alt="">
+              </template>
                   <template v-slot:badge>Ma vie sociale</template>
                   <template v-slot:title
                     >Vie associative ou citoyenne : et si je m'engageais ? </template
@@ -79,8 +81,11 @@ import CardShadow from "@/components/CardShadow.vue";
             </CardShadow>
           </div>
           <div class="col-span-4">
-            <img class="rounded-t-md w-full" src="@/assets/images/stetoscope.png" alt="">
-            <CardShadow class="mt-3">
+           
+            <CardShadow >
+              <template v-slot:image>
+                <img class="rounded-t-md w-full" src="@/assets/images/stetoscope.png" alt="">
+              </template>
                   <template v-slot:badge>Témoignage</template>
                   <template v-slot:title
                     >Être bien accompagné à ma sortie d'hospitalisation</template
@@ -123,11 +128,4 @@ import CardShadow from "@/components/CardShadow.vue";
          </div>
       </article>
 
-  <div class="flex justify-center items-center gap-10 pt-32">
-    <p>Proposé par:</p>
-    <img src="@images/canv-logo.png" alt="Assurance retraite logo">
-    <img src="@images/logo-argirc.png" alt="Agirc logo">
-    <img src="@images/msa-logo.png" alt="MSA logo">
-    <img src="@images/cnracl-logo.png" alt="Cnracl logo">
-  </div>
 </template>
