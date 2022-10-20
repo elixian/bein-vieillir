@@ -11,9 +11,21 @@ const router = createRouter({
     },
     {
       path: '/matete',
-      name: 'matete',
-      component: () => import('../views/HeadArticleView.vue')
-    }
+      name:'matete',
+      component: () => import('../views/MyHeadView.vue'),
+      children:[
+        {
+          path: '',
+          
+        component: () => import('../pages/MyHeadArticle.vue'),
+        },
+        {
+          path: 'stress',
+         name: 'stress',
+      component: () => import('../pages/StressArticle.vue'),
+        }
+      ]
+    },
   ]
 })
 
