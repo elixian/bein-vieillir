@@ -238,7 +238,7 @@ import CardShadow from "@/components/CardShadow.vue";
           <article class="mt-8">
             <h4> Pour aller plus loin</h4>
             <p class="mt-8">Si vous désirez creuser ce sujet nous vous proposons ce support en format pdf téléchargeable via le lien ci-dessous :</p>
-            <a class="flex  gap-3 p-2 pl-3 pr-3 mt-4 border border-bv-purple rounded-lg w-max" href="/assets/Programme-sport.pdf" download >
+            <a class="flex  gap-3 p-2 pl-3 pr-3 mt-4 border border-bv-purple rounded-lg w-max" href="/static/Programme-sport.pdf" download >
                <img src="@images/icones/download.svg" alt="telechargement icone"> Programme de sport - Bien vieillir [PDF - 2 Mo] 
             </a>
         </article>
