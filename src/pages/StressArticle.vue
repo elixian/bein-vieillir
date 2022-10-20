@@ -237,10 +237,24 @@ import CardShadow from "@/components/CardShadow.vue";
 
           <article class="mt-8">
             <h4> Pour aller plus loin</h4>
-            <p class="mt-8">Si vous désirez creuser ce sujet nous vous proposons ce support en format pdf téléchargeable via le lien ci-dessous :</p>
+            <p class="mt-5">Si vous désirez creuser ce sujet nous vous proposons ce support en format pdf téléchargeable via le lien ci-dessous :</p>
             <a class="flex  gap-3 p-2 pl-3 pr-3 mt-4 border border-bv-purple rounded-lg w-max" href="/static/Programme-sport.pdf" download >
                <img src="@images/icones/download.svg" alt="telechargement icone"> Programme de sport - Bien vieillir [PDF - 2 Mo] 
             </a>
+        </article >
+        <article class="mt-8">
+            <div class="bg-bv-blue-bg rounded-lg p-4">
+                <h3 class="text-bv-green">Lien utiles</h3>
+                <div class="flex p-4 pt-5 pb-5 gap-5 bg-white rounded-lg  ">
+                    <img src="@images/logo-federation-natio-sport.png" alt="">
+                    <div>
+                        <h5 class="underline mb-2 ">Sport en milieu rural</h5>
+                        <p>La FNSMR a pour but de favoriser la pratique d’activités sportives adaptées aux spécificités de milieu rural.</p>
+                        
+                    </div>
+                    <img class="w-4" src="@images/icones/chevron-right.svg" alt="">
+                </div>
+            </div>
         </article>
           
         </section>
