@@ -8,41 +8,47 @@ import LayoutFull from "@/layouts/LayoutFull.vue";
 <template>
 
       <div
-        class="bg-bv-blue-bg "
+        class="bg-bv-blue-bg absolute w-full h-[620px]"
       >
+    </div>
       <LayoutFull>
-        <div class="relative grid grid-cols-12 gap-5  h-[620px]  items-center">
-          <div class=" col-span-7">
-            <h1 class="text-bv-purple">Bien vieillir <span class="text-bv-green">en toute sérénité </span></h1>
-            <p class="text-bv-purple pt-4 max-w-fit">
-              Obtenez via des conseils, des témoignages  et des avis d’experts,
-              toutes les clés pour avancer en âge sereinement.
-            </p>
+        <div class="relative grid grid-cols-12 gap-5   pt-20">
+          <div class=" col-span-7 self-start">
+            <div class="flex flex-col gap-7">
+              <h1 class="text-bv-purple">Bien vieillir <span class="text-bv-green">en toute sérénité </span></h1>
+              <p class="text-bv-purple pt-4 max-w-fit">
+                Obtenez via des conseils, des témoignages  et des avis d’experts,
+                toutes les clés pour avancer en âge sereinement.
+              </p>
+              <div class=" flex justify-evenly  items-center gap-8  h-44 w-10/12 pr-9 pl-9 bg-white shadow-lg rounded-lg">
+              <img src="@images/Group-186.png" alt="">
+              <div class="flex flex-col gap-5">
+                <p class="font-bold">Vous voulez faire le plein d'idées et de conseils pour rester en forme ?</p>
+                <button class=" bg-bv-purple leading-3 p-4 pr-8 pl-8 h-12 rounded-lg text-white">Je découvre les activités</button>
+              </div>
           </div>
-          <div class="col-start-8 col-span-5 flex justify-between">
-            <div class="relative">
-              <img class="h-72" src="@images/couple.png" alt="">
+            </div>
+          </div>
+          <div class="col-start-8 col-span-5 flex ">
+            <div class="relative h-fit">
+              <img class="w-[436px]" src="@images/couple.png" alt="">
               <img class="absolute -bottom-4 " src="@images/arrow-twist.svg" alt="">
               <img class="absolute bottom-24 -right-24" src="@images/bulle-dialog.svg" alt="">
               <img class="absolute top-2 -right-20" src="@images/ampoule.png" alt="">
             </div>
           
           </div>
-          <!-- <div class="absolute flex justify-evenly  items-center gap-8 bottom-0 right-1/2 translate-y-1/2 translate-x-1/2 h-36 w-2/3 pr-9 pl-9 bg-white shadow-lg rounded-lg">
-              <img src="@images/Group-186.png" alt="">
-              <p class="font-bold">Vous voulez faire le plein d'idées et de conseils pour rester en forme ?</p>
-              <button class=" bg-bv-purple leading-3 p-4 pr-8 pl-8 h-12 rounded-lg text-white">Je découvre les activités</button>
-          </div> -->
+          
         </div>
       </LayoutFull>
-      </div>
+      
       <!--      A NE PAS LOUPER             -->
       <LayoutFull>
-        <article class="grid grid-cols-12 gap-5 pt-32">
+        <article class="relative grid grid-cols-12 gap-5 pt-20">
           <h2 class="col-span-full border-l-bv-green border-l-8  pl-2">À ne pas louper</h2>
         
             <div class="col-span-7 flex">
-              <img
+              <img 
                 src="../assets/images/drink-water.png"
                 alt="femme qui boit de l'eau"
               />
