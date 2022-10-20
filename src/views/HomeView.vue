@@ -44,7 +44,7 @@ import LayoutFull from "@/layouts/LayoutFull.vue";
       
       <!--      A NE PAS LOUPER             -->
       <LayoutFull>
-        <article class="relative grid grid-cols-12 gap-5 pt-20">
+        <article class="relative grid grid-cols-12 gap-5 pt-">
           <h2 class="col-span-full border-l-bv-green border-l-8  pl-2">À ne pas louper</h2>
         
             <div class="col-span-7 flex">
