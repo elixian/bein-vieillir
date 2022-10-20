@@ -1,27 +1,27 @@
 <template>
   <header
-    class="h-[104px] bg-white fixed w-full top-0 left-0 right-0 bottom-0 pr-44 pl-44 z-10"
+    class="h-[104px] bg-white fixed w-full top-0 left-0 right-0 bottom-0 z-10"
   >
-    <div class="flex h-full items-center align-middle">
-      <img src="@/assets/images/logo-bien-vieillir.svg" alt="" srcset="" />
-
-      <ul class="main-nav flex flex-grow justify-evenly gap-5 ">
-        <li v-for=" name, i in dataMenu" :key="i" @click="subMenu = i===1 &&!subMenu"  class="hover:text-bv-green transition-colors duration-300 ">
-          <router-link to="/" v-if="i===0">{{name.label}}</router-link>
-          <span v-else> {{name.label}}</span>
-          <span v-if="name.img"><img src="@/assets/images/icones/triangle.svg" alt="" /></span>
-        </li>
-
-      </ul>
-      <div class="options flex gap-4">
-        <div
-          class="flex items-center justify-center bg-slate-50 rounded w-14 h-14"
-        >
-          <img src="@/assets/images/icones/loop.svg" alt="icone loupe" />
+    <LayoutFull class="h-full">
+      <div class="flex h-full items-center align-middle gap-8">
+        <img src="@/assets/images/logo-bien-vieillir.svg" alt="" srcset="" />
+        <ul class="main-nav flex flex-grow justify-evenly gap-5 ">
+          <li v-for=" name, i in dataMenu" :key="i" @click="subMenu = i===1 &&!subMenu"  class="hover:text-bv-green transition-colors duration-300 ">
+            <router-link to="/" v-if="i===0">{{name.label}}</router-link>
+            <span v-else> {{name.label}}</span>
+            <span v-if="name.img"><img src="@/assets/images/icones/triangle.svg" alt="" /></span>
+          </li>
+        </ul>
+        <div class="options flex gap-4 ">
+          <div
+            class="flex items-center justify-center bg-slate-50 rounded w-14 h-14"
+          >
+            <img src="@/assets/images/icones/loop.svg" alt="icone loupe" />
+          </div>
+          <img src="@/assets/images/icones/accessibilite.svg" alt="icone oeil" />
         </div>
-        <img src="@/assets/images/icones/accessibilite.svg" alt="icone oeil" />
       </div>
-    </div>
+    </LayoutFull>
     
       <!-- *******  MEGA MENU  ******* -->
     <div
@@ -91,6 +91,7 @@ nav li {
 
 <script setup>
 import { ref} from "vue"
+import LayoutFull from "@/layouts/LayoutFull.vue"
 let subMenu = ref(0);
 
 let dataMenu = ref([

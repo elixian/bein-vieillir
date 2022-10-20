@@ -7,11 +7,11 @@ import BadgesTag from "./ui/BadgesTag.vue";
 <template>
     <div class="card flex flex-col  ">
         <slot name="image"></slot>
-        <div class=" flex flex-col p-5">
+        <div class=" flex flex-col p-5 flex-grow">
             <BadgesTag class="mt-3"><slot name='badge'></slot></BadgesTag>
-            <h3 class="mt-2"><slot name='title'></slot></h3>
-            <p class="mt-2 text-bv-grey-2 flex-grow align-bottom"><slot name='content'></slot></p>
-            <followArrow class="self-end"/>
+            <h4 class="mt-2 "><slot name='title'></slot></h4>
+            <p  class="mt-2 text-bv-grey-2 align-bottom flex-grow "><slot name='content'></slot></p>
+            <followArrow class="self-end "/>
         </div>
     </div>
 </template>
