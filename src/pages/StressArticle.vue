@@ -16,7 +16,7 @@ import CardShadow from "@/components/CardShadow.vue";
     </div>
     <div class="grid grid-cols-12 gap-5">
       <aside
-        class="col-span-4 sticky rounded-lg h-max top-36 mt-5 bg-bv-blue-bg p-5 w-80"
+        class="col-span-4 sticky rounded-lg h-max top-36 mt-5 bg-bv-blue-bg p-5 w-72"
       >
         <nav class="flex flex-col gap-5">
           <h5 class="text-bv-purple">Sommaire de l’article</h5>
@@ -234,6 +234,14 @@ import CardShadow from "@/components/CardShadow.vue";
                 <p class="mt-8">Les bénéfices de l’activité physique sont de 4 sortes : l’endurance, le renforcement musculaire, la souplesse et l’équilibre. Pour découvrir les différentes activités et la fréquence à laquelle les pratiquer, suivez ce lien. Et vous apprendrez que l’activité physique est bonne pour la tête également ! </p>
             </div>
           </article>
+
+          <article class="mt-8">
+            <h4> Pour aller plus loin</h4>
+            <p class="mt-8">Si vous désirez creuser ce sujet nous vous proposons ce support en format pdf téléchargeable via le lien ci-dessous :</p>
+            <a class="flex  gap-3 p-2 pl-3 pr-3 mt-4 border border-bv-purple rounded-lg w-max" href="/assets/Programme-sport.pdf" download >
+               <img src="@images/icones/download.svg" alt="telechargement icone"> Programme de sport - Bien vieillir [PDF - 2 Mo] 
+            </a>
+        </article>
           
         </section>
       </main>

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="h-[104px] bg-white fixed w-full top-0 left-0 right-0 bottom-0 z-10"
+    class="h-20 bg-white fixed w-full top-0 left-0 right-0 bottom-0 z-10"
   >
     <LayoutFull class="h-full">
       <div class="flex h-full items-center align-middle gap-8">
@@ -25,7 +25,7 @@
     
       <!-- *******  MEGA MENU  ******* -->
     <div
-      class="sub-menu absolute flex top-[104px] left-0 h-[340px] w-full shadow-lg z-10 bg-white"
+      class="sub-menu absolute flex top-20 left-0 h-[340px] w-full shadow-lg z-10 bg-white"
       v-if="subMenu" @mouseleave.prevent="subMenu=0"
     >
       <div class="know-more pl-44 pt-8 pr-16 bg-slate-100 h-full w-1/3">

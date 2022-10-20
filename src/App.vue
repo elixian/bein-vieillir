@@ -8,7 +8,7 @@ import Propulsed from "./components/Propulsed.vue";
 <template>
   <HeaderNav />
   <main >
-    <section class="pt-[104px]">
+    <section class="pt-20">
       <RouterView />
     </section>
   </main>
