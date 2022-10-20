@@ -15,6 +15,9 @@ module.exports = {
         'bv-blue-bg': 'rgb(var(--color-blue-bg))',
         'bv-beige': 'rgb(var(--color-beige))',
         'bv-purple': 'rgb(var(--color-purple))',
+      },
+      maxWidth: {
+        '8xl': '1440px',
       }
     },
   },
