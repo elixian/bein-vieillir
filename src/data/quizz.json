@@ -1,0 +1,26 @@
+{
+"alimentation":{
+    "questions":[
+        {
+            "id":1,
+            "title": "Mon titre test",
+            "choix":[
+                {"id":1, "choice":"1 fois par jour" },
+                {"id":2, "choice":"3 fois par jour" },
+                {"id":3, "choice":"1 fois par semaine" }      
+            ],
+            "response": 2
+        },
+        {
+            "id":2,
+            "title": "Mon titre test 3",
+            "choix":[
+                {"id":1, "choice":"1 fois par jour" },
+                {"id":2, "choice":"3 fois par jour" },
+                {"id":3, "choice":"1 fois par semaine" }      
+            ],
+            "response": 3
+        }
+    ]
+}
+}
