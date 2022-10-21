@@ -81,10 +81,10 @@ const percentStage = computed(()=>{
         </button>
         <button
           v-else
-          class="border rounded-r-lg p-3 mr-3"
+          class=" flex gap-4 bg-bv-purple text-white border rounded-lg p-3 mr-3"
           @click.prevent="nextQuestion()"
         >
-          Question suivante
+          <span>Je passe à la question suivante!</span><img src="@images/icones/arrow-right.svg" alt=""> 
         </button>
     </div>
   </div>
