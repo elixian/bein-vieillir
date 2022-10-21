@@ -124,7 +124,7 @@ import LayoutFull from "@/layouts/LayoutFull.vue";
               </div>
            </div>
            <!-- =========== Pourbienvieillir.fr =========== -->
-           <div class=" col-span-full flex justify-between pt-28">
+           <div class=" col-span-full flex justify-between pt-28  pb-40">
               <div class="relative pt-3">
                 <h2>Pourbienvieillir.fr, <br/> c'est ... </h2>
                 <img class="absolute right-0 -bottom-2" src="@/assets/images/arrow-twist.svg" alt="flèche">

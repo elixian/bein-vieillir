@@ -9,7 +9,7 @@ console.log("🚀 ~ file: HeadArticleView.vue ~ line 6 ~ stress", psychologie);
 </script>
 
 <template>
-  <div class="bg-bv-blue-bg w-screen h-full -z-0">
+  <div class="bg-bv-blue-bg w-screen h-full -z-0  ">
     <LayoutFull>
       <article
         class="grid relative grid-cols-12 auto-rows-min h-[403px] pt-9 z-0"
@@ -167,7 +167,7 @@ console.log("🚀 ~ file: HeadArticleView.vue ~ line 6 ~ stress", psychologie);
     </article>
 
     <!-- Les dernières actualités sur le sujet -->
-    <article class="grid grid-cols-12 gap-5 pt-24">
+    <article class="grid grid-cols-12 gap-5 pt-24 pb-40">
       <h2 class="col-span-full">Les dernières actualités sur le sujet</h2>
 
       <CardShadow class="col-span-3">
