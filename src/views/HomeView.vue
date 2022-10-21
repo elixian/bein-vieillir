@@ -109,7 +109,9 @@ import LayoutFull from "@/layouts/LayoutFull.vue";
                 Quizz
               </div>
               <h3>Je teste mes connaissances en matière d’alimentation</h3>
-              <div class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max"><img class="w-[13px] -rotate-90" src="@/assets/images/icones/triangle.svg" alt=""> Relever le défi</div>
+              <router-link to="quizz">
+                <div class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max"><img class="w-[13px] -rotate-90" src="@/assets/images/icones/triangle.svg" alt=""> Relever le défi</div>
+              </router-link>
             </div>
           <!-- ===== Bien viellir a ma manière ==== -->
            <div class="col-span-full flex p-44 pt-16 pb-20  gap-14 h-[355px] bg-bv-blue-bg justify-center items-center ">
