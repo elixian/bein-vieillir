@@ -13,9 +13,9 @@
         
     }
 
-    body{
-        // padding-bottom: 140px;
-    };
+    html{
+        scroll-behavior: smooth;
+    }
 
     :root{
         --color-green: 82 174 50;
