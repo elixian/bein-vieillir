@@ -1,5 +1,5 @@
 <template>
-  <header
+  <header id="header"
     class="h-20 bg-white fixed w-full top-0 left-0 right-0 bottom-0 z-10"
   >
     <LayoutFull class="h-full">
@@ -86,11 +86,17 @@ nav li {
   
 }
 
+#header{
+  transition:all .5s ease-in-out;
+  &.hide{
+    top:-400px;
+  }
+}
 
 </style>
 
 <script setup>
-import { ref} from "vue"
+import { ref, onMounted } from "vue"
 import LayoutFull from "@/layouts/LayoutFull.vue"
 let subMenu = ref(0);
 
@@ -104,4 +110,23 @@ let dataMenu = ref([
   
 
 ])
+function setAutoHideNav(){
+  const header = document.getElementById("header");
+
+  window.onscroll = function(){
+    let currentScrollPos = window.pageYOffset;
+    console.log("🚀 ~ file: HeaderNav.vue ~ line 118 ~ setAutoHideNav ~ currentScrollPos", currentScrollPos)
+    if ( currentScrollPos > 400) {
+      header.classList.add('hide');
+    }
+    else{
+      header.classList.remove("hide")
+    }
+  } 
+  }
+
+
+  onMounted (()=>{
+    setAutoHideNav()
+  })
 </script>
