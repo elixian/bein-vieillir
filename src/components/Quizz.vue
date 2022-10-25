@@ -111,7 +111,7 @@ function selectGoodResponse(){
           <P v-html="q_data[index].tips"></P>
         </span>
         <span class=" block  p-5 bg-bv-blue-bg" v-else >
-          <span class="flex gap-3 mb-3"><h3>Bien essayé !</h3> <img src="@images/icones/red-cross.svg" alt=""></span>
+          <span class="flex gap-3 mb-3"><h3>Bien essayé !</h3> <img src="@images/icones/false.svg" alt=""></span>
           <p class="font-bold mb-2">La réponse était: {{selectGoodResponse().choice}}</p>
           <P v-html="q_data[index].tips"></P>
         </span>
