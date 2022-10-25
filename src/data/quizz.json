@@ -9,7 +9,8 @@
                 {"id":2, "choice":"1 fois par semaine" },
                 {"id":3, "choice":"4 fois par semaine" }      
             ],
-            "response": 2
+            "response": 2,
+            "tips": "Le Programme National Nutrition et Santé (PNNS) établi par le ministère chargé de la Santé recommande le seuil de <b>500 grammes de viande cuite (hors volaille) par semaine</b>."
         },
         {
             "id":2,
