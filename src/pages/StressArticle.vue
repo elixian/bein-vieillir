@@ -28,7 +28,7 @@ import CardShadow from "@/components/CardShadow.vue";
             <li class="mb-3">
               Comment maintenir une activité physique régulière ?
             </li>
-            <li class="mb-3">La meilleure façon de rester en forme</li>
+            <li class="mb-3"><a href="#link-4" >La meilleure façon de rester en forme</a></li>
             <li class="mb-3">La bonne idée</li>
             <li class="mb-3">Le saviez-vous ?</li>
           </ul>
@@ -71,7 +71,7 @@ import CardShadow from "@/components/CardShadow.vue";
               65 ans, d’équilibre.
             </p>
           </article>
-          <article class="mt-8">
+          <article class="mt-8" id="link-4" >
             <h3 >La meilleure façon de rester en forme</h3>
 
             <p class="mt-5">

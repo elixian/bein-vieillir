@@ -1,8 +1,11 @@
 <script setup>
 import { computed, ref, unref } from "vue";
+import { storeToRefs } from 'pinia'
+import {useQuizzStore} from '@/stores/quizz'
+import { mapState } from 'pinia'
+
 
 const props = defineProps({ q_data: Object });
-console.log("🚀 ~ file: Quizz.vue ~ line 3 ~ props", props);
 const index = ref(0);
 const selected = ref(null);
 const nextButton = ref(0);
@@ -11,6 +14,8 @@ const isGoodAnswer = ref(0);
 // Enregistrer le resultat a la validation
 const goodanswersList = ref([]);
 
+const {score} = useQuizzStore();
+console.log(score);
 // function checkResponse
 function checkResponse() {
   GoodAnswer()
@@ -56,6 +61,10 @@ function selectGoodResponse(){
 }
 
 
+
+
+
+
 </script>
 
 <template>
@@ -80,7 +89,7 @@ function selectGoodResponse(){
           <!-- <div v-for="n in q_data.choix" :key="n.id">{{n.choice}}</div> -->
           <div class="flex flex-col gap-4">
             <template v-for="n in q_data[index].choix" :key="n.id">
-              <label class="flex gap-4 h-20 items-center border p-5 rounded-lg hover:bg-bv-blue-bg cursor-pointer" :class="classRessult(n.id)" :for="n.id">
+              <label class="flex gap-4 h-20 items-center border p-5 rounded-lg hover:bg-bv-blue-bg transition cursor-pointer" :class="classRessult(n.id)" :for="n.id">
                 <input
                   type="radio"
                   :value="n.id"
