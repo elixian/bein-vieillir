@@ -12,30 +12,30 @@ import CardShadow from "@/components/CardShadow.vue";
       >
       > <span>Ma tête</span>
       >
-      <span class="font-bold">L’activité physique, votre meilleure alliée</span>
+      <span  class="font-bold">L’activité physique, votre meilleure alliée</span>
     </div>
     <div class="grid grid-cols-12 gap-5">
       <aside
         class="col-span-4 sticky rounded-lg h-max top-36 mt-5 bg-bv-blue-bg p-5 w-72"
       >
         <nav class="flex flex-col gap-5">
-          <h5 class="text-bv-purple">Sommaire de l’article</h5>
+          <h5  class="text-bv-purple">Sommaire de l’article</h5>
           <ul>
             <li class="mb-3">
-              Activité physique ne rime pas forcément avec sport
+              <a href="#link-1">Activité physique ne rime pas forcément avec sport</a>
             </li>
-            <li class="mb-3">La meilleure façon de rester en forme</li>
+            <li class="mb-3"><a href="#link-2">La meilleure façon de rester en forme</a></li>
             <li class="mb-3">
-              Comment maintenir une activité physique régulière ?
+              <a href="#link-3">Comment maintenir une activité physique régulière ?</a>
             </li>
             <li class="mb-3"><a href="#link-4" >La meilleure façon de rester en forme</a></li>
-            <li class="mb-3">La bonne idée</li>
-            <li class="mb-3">Le saviez-vous ?</li>
+            <li class="mb-3"><a href="#link-5">La bonne idée</a></li>
+            <li class="mb-3"><a href="#link-6">Le saviez-vous ?</a></li>
           </ul>
         </nav>
       </aside>
       <main class="col-span-8">
-        <h2 class="mb-8">L’activité physique, votre meilleure alliée</h2>
+        <h2 id="link-1" class="mb-8">L’activité physique, votre meilleure alliée</h2>
         <p class="text-xl mb-6">
           Au moins trente minutes d’activité physique d’endurance cinq jours par
           semaine au moins, on ne le répétera jamais assez, c’est indispensable
@@ -71,7 +71,7 @@ import CardShadow from "@/components/CardShadow.vue";
               65 ans, d’équilibre.
             </p>
           </article>
-          <article class="mt-8" id="link-4" >
+          <article id="link-2" class="mt-8"  >
             <h3 >La meilleure façon de rester en forme</h3>
 
             <p class="mt-5">
@@ -140,7 +140,7 @@ import CardShadow from "@/components/CardShadow.vue";
             <followArrow class="self-end" />
           </a>
 
-          <article class="mt-8">
+          <article id="link-3" class="mt-8">
             <h4 >
               Comment maintenir une activité physique régulière ?
             </h4>
@@ -213,7 +213,7 @@ import CardShadow from "@/components/CardShadow.vue";
               </tr>
             </table>
           </article>
-          <article class="mt-8">
+          <article id="link-5" class="mt-8">
             <h4 >La bonne idée</h4>
             <p class="mt-5">
               Intégrer un club permet de profiter de conseils personnalisés
@@ -227,7 +227,7 @@ import CardShadow from "@/components/CardShadow.vue";
             </p>
           </article>
 
-          <article class="mt-8">
+          <article id="link-6" class="mt-8">
             <div class="bg-bv-beige p-6 border border-bv-green rounded-lg">
               <h4>Le saviez vous ?</h4>
               <p class="mt-5">

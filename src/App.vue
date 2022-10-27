@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import HeaderNav from "@/components/HeaderNav.vue";
+import HeaderNav from "@/components/header/HeaderNav.vue";
 import Footer from "./components/Footer.vue";
 import Propulsed from "./components/Propulsed.vue";
 </script>

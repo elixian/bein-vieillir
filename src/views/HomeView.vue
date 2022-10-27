@@ -64,7 +64,7 @@ import LayoutFull from "@/layouts/LayoutFull.vue";
               </CardShadow>
             </div>
             <div class="col-span-5 flex flex-col">
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-5">
                 <CardShadow class="">
                   <template v-slot:badge>Actualité</template>
                   <template v-slot:title
