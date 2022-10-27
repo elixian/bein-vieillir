@@ -2,6 +2,11 @@
  import data_quizz from "@/data/quizz.json"
  import Quizz from "@/components/Quizz.vue"
  import LayoutFull from "@/layouts/LayoutFull.vue"
+ import { onMounted} from 'vue';
+
+onMounted(()=>{
+    window.scrollTo(0, -100)
+})
 const getAlimentation = ()=>{
     const {alimentation} = data_quizz;
     return alimentation
