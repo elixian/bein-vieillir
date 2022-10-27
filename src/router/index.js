@@ -3,6 +3,10 @@ import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
   routes: [
     {
       path: '/',
@@ -31,7 +35,19 @@ const router = createRouter({
       name: 'quizz',
       component: () => import('../pages/QuizzPage.vue'),
     },
+    {
+      path: '/Mediatheque',
+      name: 'mediatheque',
+      component: () => import('../views/MediathequeView.vue'),
+      children:[
+        {
+          path: '',
+        component: () => import('../pages/MediathequePage.vue'),
+        }
+      ]
+    }
   ]
 })
+
 
 export default router
