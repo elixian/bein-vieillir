@@ -14,7 +14,33 @@
             },
             "submenu": [
                 {
-                    "title": "Stress",
+                    "title": "Autrement",
+                    "links": [
+                        {
+                            "label": "Continuer à apprendre",
+                            "href": "#"
+                        },
+                        {
+                            "label": "Stress et émotions",
+                            "href": "#"
+                        }
+                    ]
+                },
+                {
+                    "title": "Autrement2",
+                    "links": [
+                        {
+                            "label": "Continuer à apprendre",
+                            "href": "#"
+                        },
+                        {
+                            "label": "Stress et émotions",
+                            "href": "#"
+                        }
+                    ]
+                },
+                {
+                    "title": "Autrement",
                     "links": [
                         {
                             "label": "Continuer à apprendre",
