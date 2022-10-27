@@ -14,8 +14,17 @@ const isGoodAnswer = ref(0);
 // Enregistrer le resultat a la validation
 const goodanswersList = ref([]);
 
-const {score} = useQuizzStore();
-console.log(score);
+
+// +++++++++++++++++++++++++++++++++++++++++++++ TEST PINIA ++++++++++++++++++++++++++++++++++
+const {setScore,getScore} = useQuizzStore();
+setScore({hello:1, msg:45})
+console.log("🚀 ~ file: Quizz.vue ~ line 18 ~ getScore", getScore())
+const test = getScore()
+// +++++++++++++++++++ END TEST +++++++++++++++++++++++++++
+
+
+
+
 // function checkResponse
 function checkResponse() {
   GoodAnswer()
@@ -23,7 +32,6 @@ function checkResponse() {
     isGoodAnswer.value
   );
   nextButton.value = 1;
-  
 }
 
 function GoodAnswer (){
@@ -70,7 +78,7 @@ function selectGoodResponse(){
 <template>
   <div class="shadow-lg p-5 bg-white rounded-lg">
     <div>
-        
+        <!-- {{test}} -->
         <div :key="q_data[index].id ">
             <p class="text-center text-bv-green font-bold">Question 
               <transition name="slide-fade" mode="out-in">
