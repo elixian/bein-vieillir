@@ -5,9 +5,9 @@ import BadgesTag from "./ui/BadgesTag.vue";
 </script>
 
 <template>
-    <div class="card flex flex-col rounded-t-lg  ">
+    <div class="card flex flex-col rounded-lg  overflow-hidden ">
         <slot name="image"></slot>
-        <div class=" flex flex-col p-5 flex-grow">
+        <div class=" flex flex-col p-5 gap-4 flex-grow">
             <BadgesTag class="mt-3"><slot name='badge'></slot></BadgesTag>
             <h4 class="mt-2 "><slot name='title'></slot></h4>
             <p  class="mt-2 text-bv-grey-2 align-bottom flex-grow "><slot name='content'></slot></p>
