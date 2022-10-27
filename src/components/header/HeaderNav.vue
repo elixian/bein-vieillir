@@ -71,6 +71,7 @@ onMounted(() => {
       </div>
     </LayoutFull>
     <mega-menu :megaMenu="megaMenu" @mouseleave="megaMenu = null"></mega-menu>
+    <!-- <mega-menu :megaMenu="megaMenu" ></mega-menu> -->
   </header>
 </template>
 
