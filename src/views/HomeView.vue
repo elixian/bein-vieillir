@@ -47,12 +47,12 @@ import LayoutFull from "@/layouts/LayoutFull.vue";
         <article class="relative grid grid-cols-12 gap-5 translate-y-12 2xl:translate-y-16">
           <h2 class="col-span-full border-l-bv-green border-l-8  pl-2">À ne pas louper</h2>
         
-            <div class="col-span-7 flex">
-              <img 
+            <div class="col-span-7 flex ">
+              <img class="rounded-l-lg"
                 src="../assets/images/drink-water.png"
                 alt="femme qui boit de l'eau"
               />
-              <CardShadow class="pl-5">
+              <CardShadow class="pl-5 rounded-l-none">
                 <template v-slot:badge>Article</template>
                 <template v-slot:title
                   >Canicule: J'adore les bons réflexes</template
@@ -103,15 +103,17 @@ import LayoutFull from "@/layouts/LayoutFull.vue";
                     >
               </CardShadow>
             </div>
-            <div class="relative flex flex-col gap-3 col-span-4 bg-slate-200 p-5 pt-[109px] mt-12 rounded-md">
-              <img class="absolute -top-4 left-1/4" src="@/assets/images/computer.svg" alt="">
-              <div class="flex w-fit p-2  pl-3 pr-3 bg-blue-600 rounded-[40px] text-white ">
-                Quizz
+            <div class="relative flex flex-col col-span-4 justify-end ">
+              <img class="absolute top-0 left-1/4" src="@/assets/images/computer.svg" alt="">
+              <div class="  flex flex-col gap-3 justify-between flex-grow  p-5 mt-20 bg-slate-200  rounded-lg">
+                <div class="flex w-fit p-2  pl-3 pr-3 bg-blue-600 rounded-[40px] text-white ">
+                  Quizz
+                </div>
+                <h4>Je teste mes connaissances en matière d’alimentation</h4>
+                <router-link to="quizz">
+                  <div class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max"><img class="w-[13px] -rotate-90" src="@/assets/images/icones/triangle.svg" alt=""> Relever le défi</div>
+                </router-link>
               </div>
-              <h3>Je teste mes connaissances en matière d’alimentation</h3>
-              <router-link to="quizz">
-                <div class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max"><img class="w-[13px] -rotate-90" src="@/assets/images/icones/triangle.svg" alt=""> Relever le défi</div>
-              </router-link>
             </div>
           <!-- ===== Bien viellir a ma manière ==== -->
            <div class="col-span-full flex p-44 pt-16 pb-20  gap-14 h-[355px] bg-bv-blue-bg justify-center items-center ">
