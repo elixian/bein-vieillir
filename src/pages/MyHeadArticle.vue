@@ -74,16 +74,15 @@ console.log("🚀 ~ file: HeadArticleView.vue ~ line 6 ~ stress", psychologie);
               Quizz
             </div>
             <h4>Testez vos conaissances en matière de gestion du stress</h4>
-            <div
-              class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max"
-            >
-              <img
+           
+            <router-link class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max" to="quizz"> <img
                 class="w-[13px] -rotate-90"
                 src="@/assets/images/icones/triangle.svg"
                 alt=""
               />
-              Relever le défi
-            </div>
+              Relever le défi</router-link>
+             
+           
           </div>
         </div>
 
@@ -112,16 +111,12 @@ console.log("🚀 ~ file: HeadArticleView.vue ~ line 6 ~ stress", psychologie);
               Quizz
             </div>
             <h4>Testez vos conaissances en matière de psychologie</h4>
-            <div
-              class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max"
-            >
-              <img
+            <router-link class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max" to="quizz"> <img
                 class="w-[13px] -rotate-90"
                 src="@/assets/images/icones/triangle.svg"
                 alt=""
               />
-              Relever le défi
-            </div>
+              Relever le défi</router-link>
           </div>
         </div>
         <!-- ========= Mémoire ========= -->
@@ -151,16 +146,12 @@ console.log("🚀 ~ file: HeadArticleView.vue ~ line 6 ~ stress", psychologie);
               Quizz
             </div>
             <h4>Testez vos conaissances en matière de mémoire</h4>
-            <div
-              class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max"
-            >
-              <img
+            <router-link class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max" to="quizz"> <img
                 class="w-[13px] -rotate-90"
                 src="@/assets/images/icones/triangle.svg"
                 alt=""
               />
-              Relever le défi
-            </div>
+              Relever le défi</router-link>
           </div>
         </div>
       </div>
