@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Actualité",
+        "url": "/"
+    },
+    {
+        "title": "Ma tête",
+        "mega": {
+            "title": "Ma tête",
+            "subtitle": "Une bonne estime de soi nous aide à reconnaitre nos besoins et à les exprimer, elle nous donne le pouvoir de dire non.",
+            "link":{
+                "label":"En savoir plus",
+                "url":"matete"
+            },
+            "submenu": [
+                {
+                    "title": "Stress",
+                    "links": [
+                        {
+                            "label": "Continuer à apprendre",
+                            "href": "#"
+                        },
+                        {
+                            "label": "Stress et émotions",
+                            "href": "#"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {"title": "Mon corps",
+    "mega": {
+        "title": "Mon corps",
+        "subtitle": "Une bonne estime de soi nous aide à reconnaitre nos besoins et à les exprimer, elle nous donne le pouvoir de dire non.",
+        "link":{
+            "label":"En savoir plus",
+            "url":"matete"
+        },
+        "submenu": [
+            {
+                "title": "Stress",
+                "links": [
+                    {
+                        "label": "Continuer à apprendre",
+                        "href": "#"
+                    }
+                ]
+            }
+        ]
+    }
+    },
+  {"title":"Mon logement", "mega":{}},
+  {"title":"Les autres","mega":{}},
+  {"title":"Pour les pros","mega":{}}
+]
