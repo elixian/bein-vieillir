@@ -2,7 +2,7 @@
 import { computed, ref, unref } from "vue";
 import { storeToRefs } from 'pinia'
 import {useQuizzStore} from '@/stores/quizz'
-import { mapState } from 'pinia'
+import StepperUi from "./ui/StepperUi.vue";
 
 
 const props = defineProps({ q_data: Object });
@@ -18,7 +18,6 @@ const goodanswersList = ref([]);
 // +++++++++++++++++++++++++++++++++++++++++++++ TEST PINIA ++++++++++++++++++++++++++++++++++
 const {setScore,getScore} = useQuizzStore();
 setScore({hello:1, msg:45})
-console.log("🚀 ~ file: Quizz.vue ~ line 18 ~ getScore", getScore())
 const test = getScore()
 // +++++++++++++++++++ END TEST +++++++++++++++++++++++++++
 
@@ -89,9 +88,7 @@ function selectGoodResponse(){
           
         </div>
    
-    <div class="relative h-2 overflow-hidden rounded-lg mb-8 mt-8 bg-bv-blue-bg">
-        <div id="stepper" class="bg-bv-green rounded-lg h-2" :style="{width:percentStage+'%'}"> </div>
-    </div>
+    <stepper-ui :percentStage="percentStage"></stepper-ui>
     <transition name="slide-fade" mode="out-in">
         <div :key="q_data[index].id">
           <!-- <div v-for="n in q_data.choix" :key="n.id">{{n.choice}}</div> -->
@@ -176,16 +173,6 @@ function selectGoodResponse(){
 }
 
 
-#stepper{
-  position:absolute;
-  top:0;
-  left:0;
-
-  width: 0%;
-  z-index: 1;
-//   background:#3F8627;
-  transition: width 1s ease-out;
-}
 
 @keyframes fluidStep{
   100%{

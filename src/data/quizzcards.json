@@ -1,0 +1,24 @@
+{
+    "module":{
+        "questions":[
+            {
+                "id":1,
+                "title": "Sélectionnez les activités que vous pratiquez : ",
+                "choix":[
+                    {"id":1, "choice":"Jeux de société / Jeux de cartes" },
+                    {"id":2, "choice":"Sudoku" },
+                    {"id":3, "choice":"Jeux de société / Jeux de cartes" },    
+                    {"id":4, "choice":"Mots croisés" },    
+                    {"id":5, "choice":"Magazines / journaux" },    
+                    {"id":6, "choice":"Loisirs créatifs" },    
+                    {"id":7, "choice":"Télévision" },    
+                    {"id":8, "choice":"Tâches ménagères" },    
+                    {"id":9, "choice":"Jeux vidéo / Internet" },    
+                    {"id":10, "choice":"Théâtre" },    
+                    {"id":11, "choice":"Lecture" },    
+                    {"id":12, "choice":"Garde de petits-enfants" }    
+                ]
+            }
+        ]
+    }
+}

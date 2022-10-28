@@ -124,7 +124,7 @@ import LayoutFull from "@/layouts/LayoutFull.vue";
               <div class="flex flex-col justify-between h-full ">
                 <h2 class="text-bv-purple">Bien vieillir à ma manière !</h2>
                 <p class="text-bv-grey-2 mt-5 flex-grow  ">Je réponds à un court questionnaire <br/>  et je découvre les articles, conseils et activités qui me correspondent !</p>
-                <button class="bg-bv-purple text-white rounded-xl p-8 pt-4 pb-4 mt-8 w-fit ">Je réponds au questionnaire</button>
+                <router-link to="module" class="bg-bv-purple text-white rounded-xl p-8 pt-4 pb-4 mt-8 w-fit ">Je réponds au questionnaire</router-link>
               </div>
            </div>
            <!-- =========== Pourbienvieillir.fr =========== -->

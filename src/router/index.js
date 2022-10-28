@@ -36,7 +36,19 @@ const router = createRouter({
     {
       path: '/quizz',
       name: 'quizz',
-      component: () => import('../pages/QuizzPage.vue'),
+      component: () => import('../views/QuizzView.vue'),
+      children :[
+        {
+          path:"",
+          component:()=> import('../pages/QuizzPage.vue')
+        },
+        {
+          path:"/module",
+          name:"module",
+          component:()=> import('../pages/QuizzCardsPage.vue')
+        },
+
+      ]
     },
     {
       path: '/Mediatheque',
