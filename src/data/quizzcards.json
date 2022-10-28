@@ -7,7 +7,7 @@
                 "choix":[
                     {"id":1, "choice":"Jeux de société / Jeux de cartes" },
                     {"id":2, "choice":"Sudoku" },
-                    {"id":3, "choice":"Jeux de société / Jeux de cartes" },    
+                    {"id":3, "choice":"Jeux de rôles" },    
                     {"id":4, "choice":"Mots croisés" },    
                     {"id":5, "choice":"Magazines / journaux" },    
                     {"id":6, "choice":"Loisirs créatifs" },    
