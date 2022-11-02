@@ -19,7 +19,7 @@ function getScore(){
     quizz.value.push(_obj)
     quizz.value.push("_obj")
     // quizz.score = {_obj,{ff:5,rr:3}} 
-    console.log("setScore",quizz.value)
+  
   }
 
 
