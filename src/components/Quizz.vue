@@ -53,7 +53,8 @@ const isEnd = computed(()=>{
 function classRessult (currentId){
   return{
     green : (currentId=== props.q_data[index.value].response) && nextButton.value,
-    red : (currentId !== props.q_data[index.value].response && selected.value == currentId) && nextButton.value
+    red : (currentId !== props.q_data[index.value].response && selected.value == currentId) && nextButton.value,
+    disabled : nextButton.value
   }
 }
 
@@ -186,5 +187,13 @@ function _goodAnswer (){
 .red{
   border-color:#FA7561;
   background:rgba(250, 117, 97, 0.08) ;
+}
+
+.disabled{
+  cursor: pointer;
+  user-select: none;
+  &:hover:not(.green,.red){
+    background: none;
+  }
 }
 </style>
