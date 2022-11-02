@@ -5,7 +5,6 @@ import myhead_data from "../data/myhead.json";
 import LayoutFull from "@/layouts/LayoutFull.vue";
 
 const { stress, psychologie, memory } = myhead_data;
-console.log("🚀 ~ file: HeadArticleView.vue ~ line 6 ~ stress", psychologie);
 </script>
 
 <template>
