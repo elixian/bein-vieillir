@@ -190,7 +190,7 @@ function _goodAnswer (){
 }
 
 .disabled{
-  cursor: pointer;
+  cursor: default;
   user-select: none;
   &:hover:not(.green,.red){
     background: none;
