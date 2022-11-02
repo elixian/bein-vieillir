@@ -9,17 +9,13 @@ export const useQuizzStore = defineStore('quizz', () => {
   //   count.value++
   // }
 
-  const quizz = ref([])
+  const quizz = ref([{id:0,result:true}])
 
 function getScore(){
   return quizz.value
 }
   function setScore(_obj){
-    
     quizz.value.push(_obj)
-    quizz.value.push("_obj")
-    // quizz.score = {_obj,{ff:5,rr:3}} 
-  
   }
 
 

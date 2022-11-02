@@ -12,13 +12,13 @@ const nextButton = ref(0);
 
 const isGoodAnswer = ref(0);
 // Enregistrer le resultat a la validation
-const goodanswersList = ref([]);
+const answersList = ref([]);
 
 
 // +++++++++++++++++++++++++++++++++++++++++++++ TEST PINIA ++++++++++++++++++++++++++++++++++
-const {setScore,getScore} = useQuizzStore();
-setScore({hello:1, msg:45})
-const test = getScore()
+const {setScore} = useQuizzStore();
+
+
 // +++++++++++++++++++ END TEST +++++++++++++++++++++++++++
 
 
@@ -26,23 +26,18 @@ const test = getScore()
 
 // function checkResponse
 function checkResponse() {
-  GoodAnswer()
-  goodanswersList.value.push(
+  _goodAnswer()
+  answersList.value.push(
     isGoodAnswer.value
   );
+  setScore({id:index.value, result:isGoodAnswer.value})
   nextButton.value = 1;
 }
-
-function GoodAnswer (){
-  isGoodAnswer.value=  props.q_data[index.value].response === +selected.value;
-}
-
 function nextQuestion() {
   index.value = index.value + 1;
   nextButton.value = !nextButton.value;
   selected.value = null;
 }
-
 const percentStage = computed(()=>{
     return (index.value + 1) / props.q_data.length *100
     
@@ -51,7 +46,6 @@ const percentStage = computed(()=>{
 const isEnd = computed(()=>{
   return props.q_data.length === index.value+1
 })
-
 
 
 // Styles function border and background
@@ -67,12 +61,16 @@ function selectGoodResponse(){
   return props.q_data[index.value].choix.filter(n=> n.id ===props.q_data[index.value].response )[0]
 }
 
+// +++++++++++++++++++ Private function +++++++++++++++++
 
-
-
-
+function _goodAnswer (){
+  isGoodAnswer.value=  props.q_data[index.value].response === +selected.value;
+}
 
 </script>
+
+
+
 
 <template>
   <div class="shadow-lg p-5 bg-white rounded-lg">
@@ -85,7 +83,6 @@ function selectGoodResponse(){
               </transition>
                 sur {{q_data.length}}</p>
           <h3 class="mt-4">{{ q_data[index].title }}</h3>
-          
         </div>
    
     <stepper-ui :percentStage="percentStage"></stepper-ui>
@@ -94,13 +91,14 @@ function selectGoodResponse(){
           <!-- <div v-for="n in q_data.choix" :key="n.id">{{n.choice}}</div> -->
           <div class="flex flex-col gap-4">
             <template v-for="n in q_data[index].choix" :key="n.id">
-              <label class="flex gap-4 h-20 items-center border p-5 rounded-lg hover:bg-bv-blue-bg transition cursor-pointer" :class="classRessult(n.id)" :for="n.id">
+              <label class="flex gap-4 h-20 items-center border p-5 rounded-lg hover:bg-bv-blue-bg select-none transition cursor-pointer" :class="classRessult(n.id)" :for="n.id">
                 <input
                   type="radio"
                   :value="n.id"
                   :name="q_data.id"
                   :id="n.id"
                   v-model="selected"
+                  :disabled="nextButton"
                 />
                 <span>{{ n.choice }}</span>
                 <!-- Affichage des puces réponses -->
@@ -136,25 +134,26 @@ function selectGoodResponse(){
 
     <!-- ================ CONTROLS BUTTONS =============== -->
     <div class="flex justify-end gap-5 mt-8">
-        <a class="underline p-3 mr-3" v-if=" index>0" href="#" @click.prevent="index--">
+        <!-- <a class="underline p-3 mr-3" v-if=" index>0" href="#" @click.prevent="index--">
             Retour à la question précédente
-        </a>
+        </a> -->
         <button
           v-if="!nextButton "
-          class="flex gap-3 items-center rounded-lg p-3 mr-3 bg-bv-purple text-white"
+          class="flex gap-3 items-center rounded-lg p-3 mr-3 bg-bv-purple text-white disabled:opacity-40"
           @click.prevent="checkResponse"
+          :disabled="!selected"
         >
           <span>Je valide mon choix</span><img class="h-3" src="@images/icones/coche.png" alt="">
         </button>
         <button
           v-else-if="!isEnd "
-          class=" flex gap-4 bg-bv-purple text-white border rounded-lg p-3 mr-3"
+          class=" flex gap-4 bg-bv-purple text-white  rounded-lg p-3 mr-3"
           @click.prevent="nextQuestion()"
           
         >
-     
           <span>Je passe à la question suivante!</span><img src="@images/icones/arrow-right.svg" alt=""> 
         </button>
+        <router-link v-else class="flex gap-4 bg-bv-purple text-white  rounded-lg p-3 mr-3" :to="{name:'resultat'}">Voir mon résultat</router-link>
     </div>
   </div>
 </template>
