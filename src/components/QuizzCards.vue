@@ -53,7 +53,7 @@ function updateValue(e) {
     </div>
 
     <!-- ================ CONTROLS BUTTONS =============== -->
-    <div class="flex justify-end gap-5 mt-8">
+    <div class="flex justify-center gap-5 mt-8">
       <!-- <a class="underline p-3 mr-3" v-if=" index>0" href="#" @click.prevent="index--">
             Retour à la question précédente
         </a>
@@ -73,6 +73,15 @@ function updateValue(e) {
      
           <span>Je passe à la question suivante!</span><img src="@images/icones/arrow-right.svg" alt=""> 
         </button> -->
+
+        <button
+          class=" flex gap-4 bg-bv-purple text-white border rounded-lg p-3 mr-3"
+          @click.prevent="nextQuestion()"
+          
+        >
+     
+          <span>Je passe à la question suivante!</span><img src="@images/icones/arrow-right.svg" alt=""> 
+        </button> 
     </div>
   </div>
 </template>
