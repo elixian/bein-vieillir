@@ -71,7 +71,7 @@
               <template v-slot:badge>Bien-être</template>
               <template v-slot:title>Gymnastique sur chaise</template>
             </card-shadow>
-            <card-shadow>
+            <card-shadow>4
               <template v-slot:image>
                 <img
                   class="rounded-t-md w-full"
