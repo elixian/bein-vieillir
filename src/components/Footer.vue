@@ -1,5 +1,5 @@
 <template>
-    <footer class="flex justify-around items-center gap-10 h-32 pr-52 pl-52 bg-bv-beige">
+    <footer class="flex justify-around items-center gap-10 h-32 pr-52 pl-52 bg-bv-blue-bg">
         <img class="h-14" src="@images/logo-bien-vieillir.svg" alt="">
         <div class="flex justify-evenly gap-12 flex-grow">
             <a class="text-bv-grey-2" href="#">Plan du site</a>
