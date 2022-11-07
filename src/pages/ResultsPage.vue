@@ -1,5 +1,5 @@
 <template>
-  <layout-full>
+  <layout-full >
     <div class>
       Accueil > <span>Bien dans mon corps</span> >
       <span class="font-bold">Votre résultat</span>
@@ -46,7 +46,7 @@
           <h2 class="mb-5 pl-2 border-l-8 border-l-bv-green">
             Du contenu pour améliorer votre condition physique
           </h2>
-          <div class="grid grid-cols-2 gap-5">
+          <div class="grid grid-cols-2 gap-5 pb-16">
             <card-shadow>
               <template v-slot:image>
                 <img
