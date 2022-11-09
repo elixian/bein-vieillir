@@ -5,6 +5,7 @@ import myhead_data from "../data/myhead.json";
 import LayoutFull from "@/layouts/LayoutFull.vue";
 
 const { stress, psychologie, memory } = myhead_data;
+
 </script>
 
 <template>
@@ -18,13 +19,7 @@ const { stress, psychologie, memory } = myhead_data;
           src="@images/myhead/bg-alpiniste.svg"
           alt=""
         />
-        <div class="breadcrumb col-span-full mb-14">
-          <router-link class="hover:text-bv-green transition" to="/"
-            >Accueil</router-link
-          >
-          > <span>Ma tête</span>
-        </div>
-        <div class="2xl:col-span-5 col-span-7">
+        <div class="2xl:col-span-5 col-span-7 pt-14">
           <h2 class="text-bv-green text-2xl">
             Bien dans ma tête, pourquoi est-ce important ?
           </h2>

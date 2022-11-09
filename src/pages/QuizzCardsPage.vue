@@ -18,10 +18,9 @@ const questions =  getAlimentation().questions
 <template>
         <div class="absolute bg-bv-blue-bg h-80 w-full"></div>
         <LayoutFull class="pt-5 pb-52">
-            Accueil > <span>Bien dans mon corps</span>
             
 
-            <div class="grid grid-cols-12 mt-5">
+            <div class="grid grid-cols-12 mt-5 pt-14">
                 <div class="col-start-3 col-end-11">
                     <h2 class="text-bv-green">Découvrez des articles et des conseils sur mesure !</h2>
                     

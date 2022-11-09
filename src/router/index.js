@@ -1,56 +1,89 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {
+  createRouter,
+  createWebHistory
+} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(
+    import.meta.env.BASE_URL),
   scrollBehavior(to, from, savedPosition) {
     // always scroll to top
-    if (to.hash===""){ // control if hash for hash links
-      return { top: 0 }
+    if (to.hash === "") { // control if hash for hash links
+      return {
+        top: 0
+      }
     }
-  
+
   },
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'home',
       component: HomeView
     },
     {
       path: '/matete',
-      name:'matete',
+    
       component: () => import('../views/MyHeadView.vue'),
-      children:[
-        {
+      children: [{
           path: '',
-          
-        component: () => import('../pages/MyHeadArticle.vue'),
+          name: 'matete',
+          component: () => import('../pages/MyHeadArticle.vue'),
+          meta:{
+            breadcrumb:[
+              {name:'Ma tête'},
+             
+            ]
+          }
         },
         {
           path: 'stress',
-         name: 'stress',
-      component: () => import('../pages/StressArticle.vue'),
+          name: 'stress',
+          component: () => import('../pages/StressArticle.vue'),
+          meta:{
+            breadcrumb:[
+              {name:'Ma tête', link:'matete'},
+              {name:"L’activité physique, votre meilleure alliée"}
+            ]
+          }
         }
       ]
     },
     {
       path: '/quizz',
-      name: 'quizz',
+      
       component: () => import('../views/QuizzView.vue'),
-      children :[
-        {
-          path:"",
-          component:()=> import('../pages/QuizzPage.vue')
+      
+      children: [{
+          path: "",
+          name: 'quizz',
+          component: () => import('../pages/QuizzPage.vue'),
+          meta:{
+            breadcrumb:[
+              {name:'Quizz'}
+            ]
+          },
         },
         {
-          path:"/module",
-          name:"module",
-          component:()=> import('../pages/QuizzCardsPage.vue')
+          path: "/module",
+          name: "module",
+          component: () => import('../pages/QuizzCardsPage.vue'),
+          meta:{
+            breadcrumb:[
+              {name:'Bien dans mon corps'}
+            ]
+          },
         },
         {
-          path:"resultat",
-          name:"resultat",
-          component:()=> import('../pages/ResultsPage.vue')
+          path: "resultat",
+          name: "resultat",
+          component: () => import('../pages/ResultsPage.vue'),
+          meta:{
+            breadcrumb:[
+              {name:'Quizz', link:'quizz'},
+              {name:'Resultat'}
+            ]
+          },
         },
 
       ]
@@ -59,12 +92,10 @@ const router = createRouter({
       path: '/Mediatheque',
       name: 'mediatheque',
       component: () => import('../views/MediathequeView.vue'),
-      children:[
-        {
-          path: '',
+      children: [{
+        path: '',
         component: () => import('../pages/MediathequePage.vue'),
-        }
-      ]
+      }]
     }
   ]
 })

@@ -1,11 +1,6 @@
 <template>
   <layout-full >
-    <div class>
-      Accueil > <span>Bien dans mon corps</span> >
-      <span class="font-bold">Votre résultat</span>
-    </div>
-
-    <div class="grid grid-cols-12 gap-5 mt-10">
+    <div class="grid grid-cols-12 gap-5 mt-10 pt-14">
       <div class="flex flex-col gap-5 col-start-3 col-span-8">
         <h2>Vos résultats</h2>
         <div class="relative rounded-lg bg-bv-blue-bg text-center p-10">

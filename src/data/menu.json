@@ -10,9 +10,9 @@
             "subtitle": "Une bonne estime de soi nous aide à reconnaitre nos besoins et à les exprimer, elle nous donne le pouvoir de dire non.",
             "link":{
                 "label":"En savoir plus",
-                "url":"matete"
+                "url":"/matete"
             },
-            "submenu": [
+            "submenu": [ 
                 {
                     "title": "Autrement",
                     "links": [

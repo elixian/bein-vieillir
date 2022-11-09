@@ -34,13 +34,14 @@ onMounted(() => {
 <template>
   <header
     id="header"
-    class="h-20 bg-white fixed w-full top-0 left-0 right-0 bottom-0 z-10"
+    class="h-20 bg-white fixed w-full top-0 left-0 right-0 bottom-0 z-40"
   >
-    <LayoutFull class="h-full">
+    <LayoutFull class="h-full ">
       <!-- USE DATA -->
 
       <div class="flex h-full items-center align-middle gap-8">
-        <img src="@/assets/images/logo-bien-vieillir.svg" alt="" srcset="" />
+        <router-link to="/"><img src="@/assets/images/logo-bien-vieillir.svg" alt="" srcset="" /></router-link>
+        
         <ul class="main-nav flex flex-grow justify-evenly gap-5">
           <li
             v-for="(menu, i) in menus"

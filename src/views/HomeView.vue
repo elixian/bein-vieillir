@@ -24,7 +24,7 @@ import LayoutFull from "@/layouts/LayoutFull.vue";
               <img src="@images/Group-186.png" alt="">
               <div class="flex flex-col gap-5">
                 <p class="font-bold">Vous voulez faire le plein d'idées et de conseils pour rester en forme ?</p>
-                <button class=" bg-bv-purple leading-3 p-4 pr-8 pl-8 h-12 rounded-lg text-white">Je découvre les activités</button>
+                <button class=" w-fit bg-bv-purple leading-3 p-4 pr-8 pl-8 h-12 rounded-lg text-white">Je découvre les activités</button>
               </div>
           </div>
             </div>

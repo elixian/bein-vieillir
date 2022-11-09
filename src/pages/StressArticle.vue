@@ -5,15 +5,7 @@ import CardShadow from "@/components/CardShadow.vue";
 </script>
 
 <template>
-  <LayoutFull class="pt-9">
-    <div class="breadcrumb col-span-full mb-14">
-      <router-link class="hover:text-bv-green transition" to="/"
-        >Accueil</router-link
-      >
-      > <span>Ma tête</span>
-      >
-      <span  class="font-bold">L’activité physique, votre meilleure alliée</span>
-    </div>
+  <LayoutFull class="pt-20">
     <div class="grid grid-cols-12 gap-5">
       <aside
         class="col-span-4 sticky rounded-lg h-max top-36 mt-5 bg-bv-blue-bg p-5 w-72"

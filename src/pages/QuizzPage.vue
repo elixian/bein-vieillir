@@ -17,9 +17,7 @@ const questions =  getAlimentation().questions
 
 <template>
         <div class="absolute bg-bv-blue-bg h-80 w-full"></div>
-        <LayoutFull class="pt-5 pb-52">
-            Accueil > <span>Bien dans mon corps</span>
-            
+        <LayoutFull class="pt-14 pb-52">      
 
             <div class="grid grid-cols-12 mt-5">
                 <div class="col-start-3 col-end-11">
