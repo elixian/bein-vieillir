@@ -306,7 +306,7 @@ import CardShadow from "@/components/CardShadow.vue";
           <article class="mt-8">
             <h3>C’est le moment de tester vos connaissances !</h3>
             <div
-              class="flex mt-6 rounded-lg shadow-lg h-[228px] bg-blue-200 p-8 overflow-hidden cursor-pointer"
+              class="flex mt-6 rounded-lg h-[228px] bg-bv-blue-200 p-8 overflow-hidden cursor-pointer"
             >
               <div class="flex-shrink-0">
                 <img class="h-full" src="@images/computer.svg" alt="" />
@@ -398,22 +398,22 @@ import CardShadow from "@/components/CardShadow.vue";
     <LayoutFull >
       <h2 class="border-l-8 pl-2 border-bv-green">Suggestions d’autres contenus</h2>
       <div class="grid grid-cols-12 gap-5 mt-8 ">
-        <CardShadow class="col-span-3 rounded-lg shadow-lg">
+        <CardShadow class="col-span-3 rounded-lg ">
          
           <template v-slot:badge>Bien-être</template>
           <template v-slot:title>Sport en milieu rural</template>
         </CardShadow>
-        <CardShadow class="col-span-3 rounded-lg shadow-lg">
+        <CardShadow class="col-span-3 rounded-lg ">
          
           <template v-slot:badge>Actualité</template>
           <template v-slot:title>Se consacrer à une association</template>
         </CardShadow>
-        <CardShadow class="col-span-3 rounded-lg shadow-lg">
+        <CardShadow class="col-span-3 rounded-lg ">
          
           <template v-slot:badge>Actualité</template>
           <template v-slot:title>Témoignage de Xavier</template>
         </CardShadow>
-        <CardShadow class="col-span-3 rounded-lg shadow-lg">
+        <CardShadow class="col-span-3 rounded-lg ">
          
           <template v-slot:badge>Actualité</template>
           <template v-slot:title>Covid-19 </template>

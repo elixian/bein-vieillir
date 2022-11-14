@@ -33,12 +33,12 @@ import { computed } from "vue-demi"
 <style lang="scss" scoped>
 input:checked + label{
     background: rgba(0, 166, 226, 0.1);
-    border : 3px solid #3455DB;
+    border : 3px solid rgb(var(--color-blue-tag));
 }
 .selected{
     label{
         background: rgba(0, 166, 226, 0.1);
-    border : 3px solid #3455DB;
+    border : 3px solid rgb(var(--color-blue-tag));
     }
    
  

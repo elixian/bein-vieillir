@@ -2,10 +2,10 @@
   <div class="absolute w-full m-auto top-20 left-0 z-10" v-if="route.meta.breadcrumb">
     <ol class="flex gap-2 m-auto max-w-8xl p-8 pl-44 pr-44">
       <li class="chevron flex justify-end pr-2 pl-2">
-        <router-link to="/">Accueil</router-link>
+        <router-link class="hover:underline" to="/">Accueil</router-link>
       </li>
       <li
-        class="chevron flex justify-end pr-1 pl-1"
+        class="chevron flex justify-end pr-1 pl-1 "
         v-for="(ariane, i) in route.meta.breadcrumb"
         :key="i"
         @mouseup="goTo(ariane.link)"
@@ -39,7 +39,8 @@ function goTo(name) {
   cursor: pointer;
   transition: color 0.3s ease-in-out;
   &:hover {
-    color: rgb(82, 174, 50);
+    text-decoration: underline;
+    
   }
   &::after {
     content: "";

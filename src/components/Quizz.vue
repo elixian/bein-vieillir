@@ -181,7 +181,7 @@ function _goodAnswer (){
 }
 
 .green{
-  border-color:#3F8627;
+  border-color:rgb(var(--color-green));
   background:rgba(63, 134, 39, 0.08) ;
 }
 .red{

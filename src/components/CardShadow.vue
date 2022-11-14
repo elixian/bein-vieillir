@@ -5,7 +5,7 @@ import BadgesTag from "./ui/BadgesTag.vue";
 </script>
 
 <template>
-    <div class="card flex flex-col rounded-lg  overflow-hidden ">
+    <div class="card flex flex-col rounded-lg   overflow-hidden ">
         <slot name="image"></slot>
         <div class=" flex flex-col p-5  flex-grow">
             <BadgesTag class="mt-2"><slot name='badge'></slot></BadgesTag>
