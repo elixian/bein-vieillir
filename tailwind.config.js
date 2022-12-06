@@ -20,6 +20,10 @@ module.exports = {
       },
       maxWidth: {
         '8xl': '1440px',
+      },
+      boxShadow:{
+        'md':'0px 2px 16px rgba(45, 47, 127, 0.05)',
+        'lg': '0px 4px 24px rgba(45, 47, 127, 0.08)'
       }
     },
   },

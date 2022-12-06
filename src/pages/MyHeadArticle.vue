@@ -55,7 +55,7 @@ const { stress, psychologie, memory } = myhead_data;
 
         <!-- Colored card -->
         <div
-          class="flex rounded-lg shadow-lg h-[228px] bg-blue-200 p-8 overflow-hidden cursor-pointer"
+          class="flex rounded-lg h-[228px] bg-bv-blue-200 p-8 overflow-hidden cursor-pointer"
         >
           <div class="flex-shrink-0">
             <img class="h-full" src="@images/computer.svg" alt="" />
@@ -92,7 +92,7 @@ const { stress, psychologie, memory } = myhead_data;
 
         <!-- Colored card -->
         <div
-          class="flex rounded-lg shadow-lg h-[228px] bg-blue-200 p-8 overflow-hidden cursor-pointer"
+          class="flex rounded-lg  h-[228px] bg-bv-blue-200 p-8 overflow-hidden cursor-pointer"
         >
           <div class="flex-shrink-0">
             <img class="h-full" src="@images/computer.svg" alt="" />
@@ -127,20 +127,20 @@ const { stress, psychologie, memory } = myhead_data;
 
         <!-- Colored card -->
         <div
-          class="flex rounded-lg shadow-lg h-[228px] bg-blue-200 p-8 overflow-hidden cursor-pointer"
+          class="flex rounded-lg  h-[228px] bg-bv-blue-200 p-8 overflow-hidden cursor-pointer"
         >
           <div class="flex-shrink-0">
             <img class="h-full" src="@images/computer.svg" alt="" />
           </div>
 
-          <div class="pl-5 flex gap-6 flex-col">
+          <div class="pl-5 flex gap-3 flex-col">
             <div
               class="flex w-fit p-2 pl-3 pr-3 bg-blue-600 rounded-[40px] text-white"
             >
               Quizz
             </div>
             <h4>Testez vos conaissances en matière de mémoire</h4>
-            <router-link class="flex gap-2 align-middle p-5 pt-3 pb-3 rounded-md bg-white w-max" to="quizz"> <img
+            <router-link class="flex gap-2 align-middle p-5 mt-3 pt-3 pb-3 rounded-md bg-white w-max" to="quizz"> <img
                 class="w-[13px] -rotate-90"
                 src="@/assets/images/icones/triangle.svg"
                 alt=""

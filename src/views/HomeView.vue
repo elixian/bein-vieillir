@@ -20,7 +20,7 @@ import ButtonUi from "../components/ui/ButtonUi.vue";
             toutes les clés pour avancer en âge sereinement.
           </p>
           <div
-            class="flex justify-evenly items-center gap-8 h-44 w-10/12 mt-9 pr-9 pl-9 bg-white shadow-lg rounded-lg"
+            class="flex justify-evenly items-center gap-8 h-44 w-10/12 mt-9 pr-9 pl-9 bg-white shadow-md rounded-lg"
           >
             <img src="@images/Group-186.png" alt="" />
             <div class="flex flex-col gap-5">
@@ -134,7 +134,7 @@ import ButtonUi from "../components/ui/ButtonUi.vue";
           alt=""
         />
         <div
-          class="flex flex-col gap-3 justify-between flex-grow p-5 mt-20 bg-slate-200 rounded-lg"
+          class="flex flex-col gap-3 justify-between flex-grow p-5 mt-20 shadow-md bg-slate-200 rounded-lg"
         >
           <div
             class="flex w-fit p-2 pl-3 pr-3 bg-blue-600 rounded-[40px] text-white"
