@@ -25,10 +25,18 @@ const questions =  getAlimentation().questions
                     <h2 class="text-bv-green">Découvrez des articles et des conseils sur mesure !</h2>
                     
                     <p class="text-bv-grey-2 mt-5 ">Répondez à 4 questions, et nous vous proposerons des contenus adaptés à vos besoins et vos attentes...</p>
-                    <QuizzCards class=" mt-5" :q_data="questions" />
-                </div>
+                    <div><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCJF8eQBzbWaMCVtUOKhAvw%2FPBV---Refonte-du-site%3Fpage-id%3D2820%253A23816%26node-id%3D2820%253A23817%26viewport%3D392%252C883%252C0.42%26scaling%3Dmin-zoom%26starting-point-node-id%3D2820%253A23817%26" allowfullscreen></iframe></div>
+                    <!-- <QuizzCards class=" mt-5" :q_data="questions" /> -->
+               </div>
                 
             </div>
         </LayoutFull>
     
 </template>
+
+<style lang="scss" scoped>
+iframe{
+    width: 784px;
+min-height: 729px;
+}
+</style>
